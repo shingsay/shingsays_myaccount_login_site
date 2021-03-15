@@ -7,6 +7,26 @@ p.intro {
     text-align: center;
 }
 
+
 form {
+    
+    text-align: center;
+}
+
+
+
+
+/**** Media Queries ****/
+
+@media only screen and (min-width: 480px) {
+
 
 }
+
+
+
+
+
+
+/* @media only screen and (min-width: 768),
+       only screen and (min-width: 700) */
