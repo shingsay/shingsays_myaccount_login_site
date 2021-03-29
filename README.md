@@ -2,7 +2,7 @@ This project demonstrates my understanding of web design for Code Lousiville's F
 
 The following features were included in the project: 
     
-    1. A hamburger menu the opens and hides navigation links on the website. When the hamburger menu is clicked it opens the links formatted in a column. The menu bar also appears on the screen horizontally at 30% width at 768 pixels and full width at 996 pixels.
+    1. A hamburger menu that opens and hides navigation links on the website. When the hamburger menu is clicked it opens the links formatted in a column. The menu bar also appears on the screen horizontally at 30% width at 768 pixels and full width at 996 pixels.
 
     2. The hamburger menu has a slight animation when clicked.
 
