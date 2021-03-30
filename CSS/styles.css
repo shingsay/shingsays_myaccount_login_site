@@ -11,6 +11,8 @@ body, html {
     height: 100%
 }
 
+
+
 *{
     box-sizing: border-box;
 }
@@ -96,9 +98,45 @@ p.intro {
     text-align: center;
 }
 
-h1 {
+.class-for-index {
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+.class-for-contact {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.class-for-faqs {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.class-for-about {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+
+/** Webpage Animation **/
+
+.link-content {
+    animation: transitionIn 2s;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-100deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
 
 
@@ -174,8 +212,8 @@ h1 {
         }
 
         li {
-            
-            padding: 100%;
+           
+            padding: 50%;
             
         }
         
