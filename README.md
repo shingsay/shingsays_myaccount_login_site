@@ -2,14 +2,14 @@ This project demonstrates my understanding of web design for Code Lousiville's F
 
 The following features were included in the project: 
     
-    1. A hamburger menu that opens and hides navigation links on the website. When the hamburger menu is clicked it opens the links formatted in a column. The menu bar also appears on the screen horizontally at 30% width at 768 pixels and full width at 996 pixels.
+    1. A hamburger menu that opens and hides navigation links on the website. When the hamburger menu is clicked it opens the links formatted in a column. The menu bar also appears on the screen horizontally at 300 pixels, at 768 pixels, and full width at 996 pixels.
 
     2. There are transition animations for the linked pages: About, FAQS and Contact.Once you click on the link the content on the page will gradually transition.
 
-    3. The email and password inputs are validated and must have the correct credentials. If nothing is entered or the incorrect credentials are entered, a message will pop up saying, "Please enter correct credentials".
+    3. The email and password inputs are validated and must have the correct credentials. If nothing is entered or the incorrect credentials are entered, an alert will pop up saying, "Please enter correct credentials".
         a. THE CREDENTIALS FOR THE FORM ARE: EMAIL: admin@example.com PASSWORD: password
-        b. Once the correct credentials are submitted a message will display a message saying, "Welcome admin@example.com"
+        b. Once the correct credentials are submitted an alert will display a message saying, "Welcome admin@example.com"
 
-    4. The form itself is draggable in all screen sizes.
+    4. The form container itself is draggable in all screen sizes.
 
    
