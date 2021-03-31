@@ -7,15 +7,15 @@
     box-sizing: border-box;
 } 
 
+h1,
+p.intro {
+    text-align: center;
+}
+
 body, html {
     height: 100%
 }
 
-
-
-*{
-    box-sizing: border-box;
-}
 
 ul {
     list-style: none;
@@ -23,7 +23,7 @@ ul {
 
 .main-img {
     background-image: url(../Photos/Mainphoto.jpg);
-    height: 785px;
+    height: 900px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,6 +31,8 @@ ul {
     
 
 }
+
+/** Form **/
 
 .container {
     display: grid;
@@ -46,6 +48,8 @@ ul {
     
 }
 
+/** Navigation Bar **/
+
 #topNav {
     display: none;
     position: absolute;
@@ -54,8 +58,16 @@ ul {
     background: white;
     opacity: .7;
     padding-right: 20px;
-
 }
+
+/** Nav Bar Hover **/
+
+.nav_ul a:hover {
+    background-color: #BDBDBD;
+}
+
+
+/** Hamburger Menu **/
 
 #openNav {
     display: block;
@@ -68,11 +80,12 @@ ul {
     overflow: hidden;
     border: 1px solid #ccc;
     background: black 10px 10px / 20px 20px no-repeat;
-
     background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
     background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
     z-index: 1;
 }
+
+/** Hamburger Menu on Open **/
 
 .with_nav #openNav {
     background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), 
@@ -85,47 +98,41 @@ ul {
 }
 
 
-.nav_ul a:hover {
-    background-color: #BDBDBD;
-    
-
-}
-
-
-
-h1,
-p.intro {
-    text-align: center;
-}
+/*** Syles for Link Pages ***/
 
 .class-for-index {
-    margin-top: 10px;
-    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .class-for-contact {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .class-for-faqs {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .class-for-about {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/** Link Pages Background Color **/
+
+body .background-color {
+    background: rgb(245, 225, 172);
     
 }
 
-
-/** Webpage Animation **/
+/**** ---- Webpage Animation ---- ****/
 
 .link-content {
-    animation: transitionIn 2s;
-    margin-right: 300px;
-    margin-left: 300px;
+    animation: transitionIn 1.75s;
+    
+    
 }
 
 @keyframes transitionIn {
@@ -140,21 +147,87 @@ p.intro {
 }
 
 
-/**** Media Queries ****/
+/**** ---- Drag Action ---- ****/
+
+#drag_container {
+    touch-action: none;
+  }
+
+  #myAccountForm {
+    touch-action: none;
+    user-select: none;
+  }
+
+  #myAccountForm:active {
+    background-color: #5c5c5ca9;
+  }
+
+  #myAccountForm:hover {
+    cursor: pointer;
+    border-color: white;
+    border-width: 10px;
+  }
+
+/**** ---- MEDIA QUERIES ---- ****/
 
 @media only screen and (min-width: 480px) {
+    /***** HAMBURGER MENU NOT OPENING AT THIS SIZE *****/
     
     
-
-  
+    #topNav {
+        display: none;
+        position: absolute;
+        top: 42px;
+        right: 8px;
+        background: white;
+        opacity: .7;
+        padding-right: 20px;
+    }
+    
+    #openNav {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 0;
+        padding-top: 40px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background: black 10px 10px / 20px 20px no-repeat;
+    
+        background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
+        background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
+        z-index: 1;
+    }
+    
+    .with_nav #openNav {
+        background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), 
+        linear-gradient(-45deg, #000  13px, #ccc 13px, #ccc 15px, #000 0);
+    }
+    
+    
+    .with_nav #topNav {
+        display: block;
+    }
+    
+    .nav_ul a:hover {
+        background-color: #BDBDBD;
+    }
+ 
+    ul {
+        list-style: none;
     }
 
+/*** --- ADJUST MARGINS FOR LINK PAGES CONTENT --- ***/
 
 
-/* HIDE HAMBURGER MENU AND UNHIDE NAV LINKS */
+    
+    .link-content {
+        padding: 0 20% 20% 20%;
+    }
 
-
-@media only screen and (max-width: 995px) and (min-width: 768px),
+@media only screen and (max-width: 995px) and (min-width: 768px)
        
 {
 
@@ -165,9 +238,8 @@ p.intro {
     #topNav {
         display: flex;
         height: 30px;
-        width: 30%;
-        
-        
+        width: 290px;
+        padding-left: 10px;
     }
 
     #openNav {
@@ -176,15 +248,35 @@ p.intro {
     
     .nav_ul {
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 
     li {
-        padding: 15px;
+        position: relative;
+        top: -10px;
+        right: 52px;
+        padding: 0 15px;
     }
 
    
-
+    #drag_container {
+        touch-action: none;
+      }
+      
+    #myAccountForm {
+        touch-action: none;
+        user-select: none;
+      }
+      
+    #myAccountForm:active {
+        background-color: #5c5c5ca9;
+      }
+      
+    #myAccountForm:hover {
+        cursor: pointer;
+        border-color: white;
+        border-width: 10px;
+      }
 
 }
 
@@ -195,27 +287,54 @@ p.intro {
         margin: 150px, auto, 10px, auto;
         gap: 12px;
     }
+
+    #topNav {   
+        display: flex;
+        width: 100%;
+        height: 30px;
+        justify-content: center;
+            
+        }
     
     #openNav {
         display: none;
-    }
+        }
 
-    #topNav {
+    .nav_ul {
         display: flex;
-        height: 30px;    
-        width: 100%;
-            
+        justify-content: center;
         }
-        .nav_ul {
-            display: flex;
-            align-items: center;
+        
+    .link-content {
+        animation: transitionIn 1.75s;
+        padding-right: 20%;
+        padding-left: 20%;
+        padding-bottom: 20%;
+            
         }
 
-        li {
-           
-            padding: 50%;
-            
+    li {
+        position: relative;
+        top: -10px;
+        padding: 0 50%;     
         }
         
-        
+    #drag_container {
+        touch-action: none;
+        }
+          
+    #myAccountForm {
+        touch-action: none;
+        user-select: none;
+        }
+          
+    #myAccountForm:active {
+        background-color: #5c5c5ca9;
+        }
+          
+    #myAccountForm:hover {
+        cursor: pointer;
+        border-color: white;
+        border-width: 10px;
+        }
 }
