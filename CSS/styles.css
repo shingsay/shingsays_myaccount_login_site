@@ -1,6 +1,7 @@
 * {
     font-family: 'Nunito Sans', sans-serif;
 }
+
  *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -8,7 +9,7 @@
 } 
 
 h1,
-p.intro {
+p {
     text-align: center;
 }
 
@@ -117,7 +118,7 @@ ul {
 
 .class-for-about {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 /** Link Pages Background Color **/
@@ -131,8 +132,7 @@ body .background-color {
 
 .link-content {
     animation: transitionIn 1.75s;
-    
-    
+
 }
 
 @keyframes transitionIn {
@@ -146,6 +146,29 @@ body .background-color {
     }
 }
 
+/*** --- Photos --- ***/
+
+.kitchen-img {
+    
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
+    
+}
+
+.spices-img {
+    
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.dutch-img {
+    
+    margin: auto;
+    display: block;
+
+}
 
 /**** ---- Drag Action ---- ****/
 
@@ -277,6 +300,31 @@ body .background-color {
         border-width: 10px;
       }
 
+
+      .kitchen-img {
+        float: left;
+        width: 33.33%;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        
+        
+    }
+    
+    .spices-img {
+        float: left;
+        width: 33.33%;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .dutch-img {
+        float: left;
+        width: 33.33%;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        
+    }
+
 }
 
 @media only screen and (min-width: 996px) {
@@ -336,4 +384,28 @@ body .background-color {
         border-color: white;
         border-width: 10px;
         }
+
+    .kitchen-img {
+        float: left;
+        width: 33.33%;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        
+        
+    }
+    
+    .spices-img {
+        float: left;
+        width: 33.33%;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .dutch-img {
+        float: left;
+        width: 33.33%;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        
+    }
 }
