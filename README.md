@@ -1,4 +1,4 @@
-This project demonstrates my understanding of web design for Code Lousiville's Front End Website Development Course 2021. The concept is a simple account login for a website using the HTML Form. 
+This project demonstrates my understanding of web design for Code Lousiville's Front End Website Development Course 2021. The concept is a simple account login for a website using the HTML Form. The drag funtion is most responsive when clicking or dragging closer to the border of the form container. 
 
 The following features were included in the project: 
     
