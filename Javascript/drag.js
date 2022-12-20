@@ -1,15 +1,15 @@
 // Drag
 
-var dragItem = document.querySelector("#myAccountForm");
-var container = document.querySelector("#drag_container");
+const dragItem = document.querySelector("#myAccountForm");
+const container = document.querySelector("#drag_container");
 
-var active = false;
-var currentX;
-var currentY;
-var initialX;
-var initialY;
-var xOffset = 0;
-var yOffset = 0;
+let active = false;
+let currentX;
+let currentY;
+let initialX;
+let initialY;
+let xOffset = 0;
+let yOffset = 0;
 
 container.addEventListener("touchstart", dragStart, false);
 container.addEventListener("touchend", dragEnd, false);

@@ -45,8 +45,6 @@ ul {
     opacity: .7;
     border-style: solid;
     border-width: 4px;
-    margin: 150px auto 10px auto;
-    
 }
 
 /** Navigation Bar **/
@@ -82,7 +80,6 @@ ul {
     border: 1px solid #ccc;
     background: black 10px 10px / 20px 20px no-repeat;
     background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
-    background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
     z-index: 1;
 }
 
@@ -99,7 +96,7 @@ ul {
 }
 
 
-/*** Syles for Link Pages ***/
+/*** Styles for Link Pages ***/
 
 .class-for-index {
     padding-top: 10px;
@@ -194,8 +191,8 @@ body .background-color {
 /**** ---- MEDIA QUERIES ---- ****/
 
 @media only screen and (min-width: 480px) {
-    
-    
+
+
     #topNav {
         display: none;
         position: absolute;
@@ -205,207 +202,186 @@ body .background-color {
         opacity: .7;
         padding-right: 20px;
     }
-    
-    #openNav {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 40px;
-        height: 0;
-        padding-top: 40px;
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background: black 10px 10px / 20px 20px no-repeat;
-    
-        background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
-        background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #000  2px, #000 4px);
-        z-index: 1;
-    }
-    
+
     .with_nav #openNav {
-        background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), 
-        linear-gradient(-45deg, #000  13px, #ccc 13px, #ccc 15px, #000 0);
+        background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0),
+        linear-gradient(-45deg, #000 13px, #ccc 13px, #ccc 15px, #000 0);
     }
-    
-    
+
+
     .with_nav #topNav {
         display: block;
     }
-    
+
     .nav_ul a:hover {
         background-color: #BDBDBD;
     }
- 
+
     ul {
         list-style: none;
     }
 
-/*** --- ADJUST MARGINS FOR LINK PAGES CONTENT --- ***/
-
-
-    
+    /*** --- ADJUST MARGINS FOR LINK PAGES CONTENT --- ***/
     .link-content {
         padding: 0 20% 20% 20%;
     }
 
-@media only screen and (max-width: 995px) and (min-width: 768px)
-       
-{
+    @media only screen and (max-width: 995px) and (min-width: 768px) {
 
-    .container {
-        margin: 90px 0 auto auto;
-    }
-    
-    #topNav {
-        display: flex;
-        height: 30px;
-        width: 290px;
-        padding-left: 10px;
-    }
-
-    #openNav {
-        display: none;
-    }
-    
-    .nav_ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    li {
-        position: relative;
-        top: -10px;
-        right: 52px;
-        padding: 0 15px;
-    }
-
-   
-    #drag_container {
-        touch-action: none;
-      }
-      
-    #myAccountForm {
-        touch-action: none;
-        user-select: none;
-      }
-      
-    #myAccountForm:active {
-        background-color: #5c5c5ca9;
-      }
-      
-    #myAccountForm:hover {
-        cursor: pointer;
-        border-color: white;
-        border-width: 10px;
-      }
-
-
-      .kitchen-img {
-        float: left;
-        width: 33.33%;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        
-        
-    }
-    
-    .spices-img {
-        float: left;
-        width: 33.33%;
-        padding-right: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .dutch-img {
-        float: left;
-        width: 33.33%;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        
-    }
-
-}
-
-@media only screen and (min-width: 996px) {
-
-    .container {
-        max-width: 480px;
-        margin: 150px, auto, 10px, auto;
-        gap: 12px;
-    }
-
-    #topNav {   
-        display: flex;
-        width: 100%;
-        height: 30px;
-        justify-content: center;
-            
-        }
-    
-    #openNav {
-        display: none;
+        .container {
+            margin: 90px 0 auto auto;
         }
 
-    .nav_ul {
-        display: flex;
-        justify-content: center;
-        }
-        
-    .link-content {
-        animation: transitionIn 1.75s;
-        padding-right: 20%;
-        padding-left: 20%;
-        padding-bottom: 20%;
-            
+        #topNav {
+            display: flex;
+            height: 30px;
+            width: 290px;
+            padding-left: 10px;
         }
 
-    li {
-        position: relative;
-        top: -10px;
-        padding: 0 50%;     
-        }
-        
-    #drag_container {
-        touch-action: none;
-        }
-          
-    #myAccountForm {
-        touch-action: none;
-        user-select: none;
-        }
-          
-    #myAccountForm:active {
-        background-color: #5c5c5ca9;
-        }
-          
-    #myAccountForm:hover {
-        cursor: pointer;
-        border-color: white;
-        border-width: 10px;
+        #openNav {
+            display: none;
         }
 
-    .kitchen-img {
-        float: left;
-        width: 33.33%;
-        padding-right: 20px;
-        padding-bottom: 30px;
-        
-        
+        .nav_ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            position: relative;
+            top: -10px;
+            right: 52px;
+            padding: 0 15px;
+        }
+
+
+        #drag_container {
+            touch-action: none;
+        }
+
+        #myAccountForm {
+            touch-action: none;
+            user-select: none;
+        }
+
+        #myAccountForm:active {
+            background-color: #5c5c5ca9;
+        }
+
+        #myAccountForm:hover {
+            cursor: pointer;
+            border-color: white;
+            border-width: 10px;
+        }
+
+
+        .kitchen-img {
+            float: left;
+            width: 33.33%;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+
+        }
+
+        .spices-img {
+            float: left;
+            width: 33.33%;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .dutch-img {
+            float: left;
+            width: 33.33%;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+        }
+
     }
-    
-    .spices-img {
-        float: left;
-        width: 33.33%;
-        padding-right: 20px;
-        padding-bottom: 30px;
-    }
-    
-    .dutch-img {
-        float: left;
-        width: 33.33%;
-        padding-right: 20px;
-        padding-bottom: 30px;
-        
+
+    @media only screen and (min-width: 996px) {
+
+        .container {
+            max-width: 480px;
+            margin: 150px auto 10px;
+            gap: 12px;
+        }
+
+        #topNav {
+            display: flex;
+            width: 100%;
+            height: 30px;
+            justify-content: center;
+
+        }
+
+        #openNav {
+            display: none;
+        }
+
+        .nav_ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .link-content {
+            animation: transitionIn 1.75s;
+            padding-right: 20%;
+            padding-left: 20%;
+            padding-bottom: 20%;
+
+        }
+
+        li {
+            position: relative;
+            top: -10px;
+            padding: 0 50%;
+        }
+
+        #drag_container {
+            touch-action: none;
+        }
+
+        #myAccountForm {
+            touch-action: none;
+            user-select: none;
+        }
+
+        #myAccountForm:active {
+            background-color: #5c5c5ca9;
+        }
+
+        #myAccountForm:hover {
+            cursor: pointer;
+            border-color: white;
+            border-width: 10px;
+        }
+
+        .kitchen-img {
+            float: left;
+            width: 33.33%;
+            padding-right: 20px;
+            padding-bottom: 30px;
+
+
+        }
+
+        .spices-img {
+            float: left;
+            width: 33.33%;
+            padding-right: 20px;
+            padding-bottom: 30px;
+        }
+
+        .dutch-img {
+            float: left;
+            width: 33.33%;
+            padding-right: 20px;
+            padding-bottom: 30px;
+
+        }
     }
 }
