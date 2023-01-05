@@ -1,6 +1,5 @@
 /*** Open Hamburger ***/
-
-var nav = document.getElementById('openNav'),
+const nav = document.getElementById('openNav'),
     body = document.body;
 
 nav.addEventListener('click', function(e) {
@@ -12,8 +11,8 @@ nav.addEventListener('click', function(e) {
 
 function validate() {
 
-var email = document.getElementById('email').value;
-var password = document.getElementById('password').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
     if(email == "admin@example.com" && password == "password")
     {
         alert("Welcome admin@example.com!");
